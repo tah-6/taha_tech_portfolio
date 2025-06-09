@@ -1,40 +1,126 @@
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-gray-800">
-      <header className="text-center space-y-4 px-6">
-        <h1 className="text-5xl font-bold">Taha <span className="text-blue-500">Tahatech</span></h1>
-        <p className="text-xl">Front‑End Developer passionate about React, design & animation</p>
-      </header>
-
-      <main className="py-16 px-6 w-full max-w-3xl space-y-16">
-        {/* Projects */}
-        <section>
-          <h2 className="text-3xl font-semibold mb-6">Projects</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="p-6 bg-white rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-2">Project Title</h3>
-              <p className="mb-4">Short description about the tech used and your role.</p>
-              <a href="#" className="text-blue-500 hover:underline">View Project →</a>
+    <div className="min-h-screen flex flex-col items-center">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full backdrop-blur-md bg-black/30 z-50 border-b border-white/10">
+        <div className="w-full max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex justify-center h-20 items-center">
+            <div className="text-2xl font-bold nav-link">Taha</div>
+            <div className="hidden md:flex space-x-12 ml-12">
+              <a href="#about" className="nav-link">About</a>
+              <a href="#skills" className="nav-link">Skills</a>
+              <a href="#projects" className="nav-link">Projects</a>
+              <a href="#contact" className="nav-link">Contact</a>
             </div>
-            {/* Repeat cards */}
           </div>
-        </section>
+        </div>
+      </nav>
 
-        {/* Contact */}
-        <section className="text-center">
-          <h2 className="text-3xl font-semibold mb-4">Let’s Connect</h2>
-          <p>Email me at <a href="mailto:you@example.com" className="text-blue-500">you@example.com</a></p>
-          <div className="mt-4 flex justify-center gap-6">
-            <a href="#" className="hover:text-blue-500">GitHub</a>
-            <a href="#" className="hover:text-blue-500">LinkedIn</a>
+      {/* Hero Section */}
+      <section className="w-full pt-40 pb-32 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 animate-pulse"></div>
+        <div className="w-full max-w-4xl mx-auto flex flex-col items-center relative">
+          <h1 className="text-6xl md:text-7xl font-bold mb-8 section-title text-center">
+            Hi, I'm <span className="animate-pulse">Taha</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-12 text-cyan-300 text-center">
+            Front-End Developer passionate about React, design & animation
+          </p>
+          <a href="#contact" className="btn-primary text-center">Get in Touch</a>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="w-full py-32 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black/20"></div>
+        <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative flex flex-col items-center">
+          <h2 className="section-title text-center mb-16">About Me</h2>
+          <div className="text-cyan-100 space-y-6 flex flex-col items-center">
+            <p className="text-lg leading-relaxed text-center max-w-2xl">
+              I'm a passionate front-end developer with a keen eye for design and a love for creating
+              smooth, interactive user experiences. I specialize in React and modern web technologies.
+            </p>
+            <p className="text-lg leading-relaxed text-center max-w-2xl">
+              When I'm not coding, you can find me exploring new design trends, contributing to open-source
+              projects, or learning new technologies to stay at the cutting edge of web development.
+            </p>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <footer className="py-4 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Taha — Built with React & Vite
+      {/* Skills Section */}
+      <section id="skills" className="w-full py-32 relative">
+        <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-black/20"></div>
+        <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative flex flex-col items-center">
+          <h2 className="section-title text-center mb-16">Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
+            {['React', 'TypeScript', 'Tailwind CSS', 'Node.js'].map((skill) => (
+              <div key={skill} className="card text-center group p-8 flex flex-col items-center justify-center">
+                <h3 className="font-semibold text-xl text-cyan-300 group-hover:text-purple-300 transition-colors">
+                  {skill}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="w-full py-32 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black/20"></div>
+        <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative flex flex-col items-center">
+          <h2 className="section-title text-center mb-16">Projects</h2>
+          <div className="grid md:grid-cols-2 gap-10 w-full">
+            {/* Project Card */}
+            <div className="card group p-8 flex flex-col items-center text-center">
+              <h3 className="text-2xl font-bold mb-4 text-cyan-300 group-hover:text-purple-300 transition-colors">
+                Project Title
+              </h3>
+              <p className="text-cyan-100 mb-6 leading-relaxed">
+                A brief description of the project, technologies used, and your role in development.
+              </p>
+              <div className="flex gap-6 justify-center">
+                <a href="#" className="text-purple-300 hover:text-cyan-300 transition-colors">Live Demo</a>
+                <a href="#" className="text-purple-300 hover:text-cyan-300 transition-colors">GitHub</a>
+              </div>
+            </div>
+            {/* Add more project cards as needed */}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="w-full py-32 relative">
+        <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-black/20"></div>
+        <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative flex flex-col items-center">
+          <h2 className="section-title text-center mb-16">Get in Touch</h2>
+          <div className="flex flex-col items-center">
+            <p className="text-cyan-100 mb-12 text-lg leading-relaxed text-center max-w-2xl">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div className="flex justify-center space-x-12">
+              <a href="mailto:your.email@example.com" className="nav-link">
+                Email
+              </a>
+              <a href="https://github.com/yourusername" className="nav-link">
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/yourusername" className="nav-link">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full py-12 bg-black/50 backdrop-blur-md border-t border-white/10">
+        <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 flex justify-center">
+          <p className="text-cyan-300">© {new Date().getFullYear()} Taha. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
