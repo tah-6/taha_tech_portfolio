@@ -26,7 +26,7 @@ function App() {
             Hi, I'm <span className="text-cyan-300 animate-pulse">Taha</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-white">
-            Front-End Developer passionate about React, design & animation
+            Computer Engineer passionate about design & creation
           </p>
           <a href="#contact" className="btn-primary text-center">Get in Touch</a>
         </div>
@@ -54,7 +54,7 @@ function App() {
         <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative flex flex-col items-center">
           <h2 className="section-title text-center mb-16">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
-            {['Java', 'React', 'JavaScript', 'C++', 'Arduino', 'Breadboarding'].map((skill) => (
+            {['Java', 'React', 'JavaScript', 'C++', 'Arduino', 'Breadboarding', 'Web Design', 'Problem Solving'].map((skill) => (
               <div key={skill} className="card text-center group p-8 flex flex-col items-center justify-center">
                 <h3 className="font-semibold text-xl text-white group-hover:text-cyan-300 transition-colors">
                   {skill}
