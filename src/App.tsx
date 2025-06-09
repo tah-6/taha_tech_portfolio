@@ -1,4 +1,3 @@
-import './index.css';
 import './App.css';
 
 function App() {
@@ -102,26 +101,19 @@ function App() {
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
             </p>
             <div className="flex justify-center space-x-12">
-              <a href="mailto:your.email@example.com" className="text-cyan-300 hover:text-purple-300 transition-colors">
+              <a href="mailto:taha.syed.irfan@gmail.com" className="text-cyan-300 hover:text-purple-300 transition-colors">
                 Email
               </a>
-              <a href="https://github.com/yourusername" className="text-cyan-300 hover:text-purple-300 transition-colors">
+              <a href="https://github.com/tah-6" className="text-cyan-300 hover:text-purple-300 transition-colors">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/yourusername" className="text-cyan-300 hover:text-purple-300 transition-colors">
+              <a href="https://www.linkedin.com/in/taha-irfan-57547525a/" className="text-cyan-300 hover:text-purple-300 transition-colors">
                 LinkedIn
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="w-full py-12 bg-black/50 backdrop-blur-md border-t border-white/10">
-        <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 flex justify-center">
-          <p className="text-white">© {new Date().getFullYear()} Taha. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

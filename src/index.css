@@ -53,28 +53,10 @@
     transform: translateY(-5px);
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
   }
-
-  .nav-link {
-    @apply relative px-4 py-2;
-    background: linear-gradient(45deg, #ff00ff, #00ffff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .nav-link::after {
-    content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300;
-    background: linear-gradient(45deg, #ff00ff, #00ffff);
-  }
-
-  .nav-link:hover::after {
-    @apply w-full;
-  }
 }
 
 @keyframes titleGlow {
   0% { filter: brightness(1); }
   50% { filter: brightness(1.5); }
   100% { filter: brightness(1); }
-}
+} 
