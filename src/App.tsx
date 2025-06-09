@@ -39,12 +39,10 @@ function App() {
           <h2 className="section-title text-center mb-16">About Me</h2>
           <div className="text-white space-y-6 flex flex-col items-center">
             <p className="text-lg leading-relaxed text-center max-w-2xl">
-              I'm a passionate front-end developer with a keen eye for design and a love for creating
-              smooth, interactive user experiences. I specialize in React and modern web technologies.
+              I'm a Computer Engineering student at the University of Guelph, passionate about creating innovative solutions and tackling complex problems. My journey in technology is driven by a love for creation, problem-solving, and embracing new experiences.
             </p>
             <p className="text-lg leading-relaxed text-center max-w-2xl">
-              When I'm not coding, you can find me exploring new design trends, contributing to open-source
-              projects, or learning new technologies to stay at the cutting edge of web development.
+              Whether I'm coding software, working with hardware, or exploring new technologies, I'm always excited to learn and grow. I believe in combining theoretical knowledge with practical experience to build meaningful solutions.
             </p>
           </div>
         </div>
@@ -56,7 +54,7 @@ function App() {
         <div className="w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 relative flex flex-col items-center">
           <h2 className="section-title text-center mb-16">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
-            {['React', 'TypeScript', 'Tailwind CSS', 'Node.js'].map((skill) => (
+            {['Java', 'React', 'JavaScript', 'C++', 'Arduino', 'Breadboarding'].map((skill) => (
               <div key={skill} className="card text-center group p-8 flex flex-col items-center justify-center">
                 <h3 className="font-semibold text-xl text-white group-hover:text-cyan-300 transition-colors">
                   {skill}
