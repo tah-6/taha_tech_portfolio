@@ -74,10 +74,14 @@ function App() {
             {/* Project Card */}
             <div className="card group p-8 flex flex-col items-center text-center">
               <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-cyan-300 transition-colors">
-                Project Title
+                Job Tracker
               </h3>
               <p className="text-white mb-6 leading-relaxed">
-                A brief description of the project, technologies used, and your role in development.
+              Internship & Job Tracker – A lightweight, client-side web app built to organize and track co-op and internship applications. Users can add, edit, filter, and export/import job entries with local persistence, so data stays in the browser without a backend.
+
+Technologies: Next.js (React), TypeScript, Tailwind CSS, Vercel (deployment).
+
+My role: Designing and implementing the entire application from scratch — including the React component architecture, localStorage persistence, CSV/JSON import/export utilities, dark-mode/mobile responsive UI, and deployment pipeline.
               </p>
               <div className="flex gap-6 justify-center">
                 <a href="https://uofg-job-tracker.vercel.app" className="text-cyan-300 hover:text-purple-300 transition-colors">Live Demo</a>
