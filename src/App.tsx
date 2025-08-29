@@ -80,8 +80,8 @@ function App() {
                 A brief description of the project, technologies used, and your role in development.
               </p>
               <div className="flex gap-6 justify-center">
-                <a href="#" className="text-cyan-300 hover:text-purple-300 transition-colors">Live Demo</a>
-                <a href="#" className="text-cyan-300 hover:text-purple-300 transition-colors">GitHub</a>
+                <a href="#https://uofg-job-tracker.vercel.app" className="text-cyan-300 hover:text-purple-300 transition-colors">Live Demo</a>
+                <a href="#https://github.com/tah-6/uofg-job-tracker" className="text-cyan-300 hover:text-purple-300 transition-colors">GitHub</a>
               </div>
             </div>
             {/* Add more project cards as needed */}
